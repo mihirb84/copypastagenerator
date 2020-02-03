@@ -1,0 +1,150 @@
+package com.pasta;
+
+public class Main {
+
+	public static void print(String[][] array, int row){
+		for(int col = 0; col < array[row].length; col++){
+			System.out.println(array[row][col]);
+		}
+	}
+	
+	public static void main(String[]args){
+		String[][] pasta = new String[120][];
+		pasta[0] = new String[20];
+		pasta[0][0] = "⠄⠄⣰⣾⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣆⠄⠄";
+		pasta[0][1] = "⠄⠄⣿⣿⣿⡿⠋⠄⡀⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠋⣉⣉⣉⡉⠙⠻⣿⣿⠄⠄";
+		pasta[0][2] = "⠄⠄⣿⣿⣿⣇⠔⠈⣿⣿⣿⣿⣿⡿⠛⢉⣤⣶⣾⣿⣿⣿⣿⣿⣿⣦⡀⠹⠄⠄";
+		pasta[0][3] = "⠄⠄⣿⣿⠃⠄⢠⣾⣿⣿⣿⠟⢁⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠄⠄";
+		pasta[0][4] = "⠄⠄⣿⣿⣿⣿⣿⣿⣿⠟⢁⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠄⠄"; 
+		pasta[0][5] = "⠄⠄⣿⣿⣿⣿⣿⡟⠁⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠄";
+		pasta[0][6] = "⠄⠄⣿⣿⣿⣿⠋⢠⣾⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠄";
+		pasta[0][7] = "⠄⠄⣿⣿⡿⠁⣰⣿⣿⣿⣿⣿⣿⣿⣿⠗⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⡟⠄⠄";
+		pasta[0][8] = "⠄⠄⣿⡿⠁⣼⣿⣿⣿⣿⣿⣿⡿⠋⠄⠄⠄⣠⣄⢰⣿⣿⣿⣿⣿⣿⣿⠃⠄⠄";
+		pasta[0][9] = "⠄⠄⡿⠁⣼⣿⣿⣿⣿⣿⣿⣿⡇⠄⢀⡴⠚⢿⣿⣿⣿⣿⣿⣿⣿⣿⡏⢠⠄⠄";
+		pasta[0][10] = "⠄⠄⠃⢰⣿⣿⣿⣿⣿⣿⡿⣿⣿⠴⠋⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⡟⢀⣾⠄⠄";
+		pasta[0][11] = "⠄⠄⢀⣿⣿⣿⣿⣿⣿⣿⠃⠈⠁⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⡟⢀⣾⣿⠄⠄";
+		pasta[0][12] = "⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⠄⠄⠄⠄⢶⣿⣿⣿⣿⣿⣿⣿⣿⠏⢀⣾⣿⣿⠄⠄";;
+		pasta[0][13] = "⠄⠄⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⠋⣠⣿⣿⣿⣿⠄⠄";
+		pasta[0][14] = "⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⢁⣼⣿⣿⣿⣿⣿⠄." ;
+		pasta[0][15] = "⠄⠄⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⢁⣴⣿⣿⣿⣿⣿⣿⣿⠄⠄" ;
+		pasta[0][16] = "⠄⠄⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⢁⣴⣿⣿⣿⣿⠗⠄⠄⣿⣿⠄⠄" ;
+		pasta[0][17] = "⠄⠄⣆⠈⠻⢿⣿⣿⣿⣿⣿⣿⠿⠛⣉⣤⣾⣿⣿⣿⣿⣿⣇⠠⠺⣷⣿⣿⠄⠄" ;
+		pasta[0][18] = "⠄⠄⣿⣿⣦⣄⣈⣉⣉⣉⣡⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⠉⠁⣀⣼⣿⣿⣿⠄⠄";
+		pasta[0][19] = "⠄⠄⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣾⣿⣿⡿⠟⠄⠄";
+		
+		pasta[1] = new String[1];
+		pasta[1][0] = "O-oooooooooo AAAAE-A-A-I-A-U- JO-oooooooooooo AAE-O-A-A-U-U-A- E-eee-ee-eee AAAAE-A-E-I-E-A-JO-ooo-oo-oo-oo EEEEO-A-AAA-AAAA";
+		
+		pasta[2] = new String[11];
+		pasta[2][0] = "░░░░░░░░▄▄▄▀▀▀▄▄███▄░░░░░░░░░░░░░░ ";
+		pasta[2][1] = "░░░░░▄▀▀░░░░░░░▐░▀██▌░░░░░░░░░░░░░ ";
+		pasta[2][2] = "░░░▄▀░░░░▄▄███░▌▀▀░▀█░░░░░░░░░░░░░ ";
+		pasta[2][3] = "░░▄█░░▄▀▀▒▒▒▒▒▄▐░░░░█▌░░░░░░░░░░░░ ";
+		pasta[2][4] = "░▐█▀▄▀▄▄▄▄▀▀▀▀▌░░░░░▐█▄░░░░░░░░░░░ ";
+		pasta[2][5] = "░▌▄▄▀▀░░░░░░░░▌░░░░▄███████▄░░░░░░ ";
+		pasta[2][6] = "░░░░░░░░░░░░░▐░░░░▐███████████▄░░░ ";
+		pasta[2][7] = "░░░░░le░░░░░░░▐░░░░▐█████████████▄ ";
+		pasta[2][8] = "░░░░toucan░░░░░░▀▄░░░▐█████████████▄ ";
+		pasta[2][9] = "░░░░░░has░░░░░░░░▀▄▄███████████████ ";
+		pasta[2][10] = "░░░░░arrived░░░░░░░░░░░░█▀██████░░";
+		
+		pasta[3] = new String[1];
+		pasta[3][0] = "Sodium, atomic number 11, was first isolated by Humphry Davy in 1807. A chemical component of salt, he named it Na in honor of the saltiest region on earth, North America.";
+		
+		pasta[4] = new String[16];
+		pasta[4][0] = "▄▄▄▄▄▄▄▄▄";
+		pasta[4][1] = "░▄███████▀▀▀▀▀▀███████▄";
+		pasta[4][2] = "░▐████▀▒DIDDLY▒▒▒▒▀██████▄";
+		pasta[4][3] = "░███▀▒▒▒▒SPAMLY▒▒▒▒▒▀█████";
+		pasta[4][4] = "░▐██▒▒▒▒▒▒DOODLY▒▒▒▒▒▒████▌";
+		pasta[4][5] = "░▐█▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████▌";
+		pasta[4][6] = "░░█▒▄▀▀▀▀▀▄▒▒▄▀▀▀▀▀▄▒▐███▌";
+		pasta[4][7] = "░░░▐░░░▄▄░░▌▐░░░▄▄░░▌▐███▌";
+		pasta[4][8] = "░▄▀▌░░░▀▀░░▌▐░░░▀▀░░▌▒▀▒█▌";
+		pasta[4][9] = "░▌▒▀▄░░░░▄▀▒▒▀▄░░░▄▀▒▒▄▀▒▌";
+		pasta[4][10] = "░▀▄▐▒▀▀▀▀▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒█";
+		pasta[4][11] = "░░░▀▌▒▄██▄▄▄▄████▄▒▒▒▒█▀";
+		pasta[4][12] = "░░░░▄██████████████▒▒▐▌";
+		pasta[4][13] = "░░░▀███▀▀████▀█████▀▒▌";
+		pasta[4][14] = "░░░░░▌▒▒▒▄▒▒▒▄▒▒▒▒▒▒▐";
+		pasta[4][15] = "░░░░░▌▒▒▒▒▀▀▀▒▒▒▒▒▒▒▐";
+		
+		pasta[5] = new String[1];
+		pasta[5][0] = "Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It’s not a story the Jedi would tell you. It’s a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.";
+		
+		pasta[6] = new String[1];
+		pasta[6][0] = "👌👀👌👀👌👀👌👀👌👀 good shit go౦ԁ sHit👌 thats ✔ some good👌👌shit right👌👌th 👌 ere👌👌👌 right✔there ✔✔if i do ƽaү so my selｆ 💯 i say so 💯 thats what im talking about right there right there (chorus: ʳᶦᵍʰᵗ ᵗʰᵉʳᵉ) mMMMMᎷМ💯 👌👌 👌НO0ОଠＯOOＯOОଠଠOoooᵒᵒᵒᵒᵒᵒᵒᵒᵒ👌 👌👌 👌 💯 👌 👀 👀 👀 👌👌Good shit";
+		
+		pasta[7] = new String[12];
+		pasta[7][0] = "⠀⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀";
+		pasta[7][1] = "⠀⠀⠀⣴⠿⠏⠀⠀⠀⠀⠀⠀⢳⡀⠀⡏⠀⠀⠀⠀⠀⢷ ";
+		pasta[7][2] = "⠀⠀⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀⣧⠀⢸⠀⠀⠀⠀⠀ ⡇";
+		pasta[7][3] = "⠀⠀⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲⣿⠀⣸⠀⠀OK⠀ ⡇";
+		pasta[7][4] = "⠀⠀⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀⠀⣿⠀⢹⠀⠀⠀⠀⠀ ⡇";
+		pasta[7][5] = "⠀⠀⠙⢿⣯⠄⠀⠀⠀⢀⡀⠀⠀⡿⠀⠀⡇⠀⠀⠀⠀⡼  ";
+		pasta[7][6] = "⠀⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀⡴⠃⠀⠀⠘⠤⣄⣠⠞⠀";
+		pasta[7][7] = "⠀⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀";
+		pasta[7][8] = "⠀⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀";
+		pasta[7][9] = "⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀";
+		pasta[7][10] = "⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀⠀⣄⢸⠀⠀⠀⠀⠀";
+		pasta[7][11] = "⣿⣿⣧⣀⣿.........⣀⣰⣏⣘⣆⣀⠀⠀";
+		
+		pasta[8] = new String[1];
+		pasta[8][0] = "So you're going by ''loltyler1'' now nerd? Haha whats up douche bag, it's Tanner from Highschool. Remember me? Me and the guys used to give you a hard time in school. Sorry you were just an easy target lol. I can see not much has changed. Remember Sarah the girl you had a crush on? Yeah we're married now. I make over 200k a year and drive a mustang GT. I guess some things never change huh loser? Nice catching up lol. Pathetic..";
+		
+		pasta[9] = new String[1];
+		pasta[9][0] = " Europe was founded in 1848 by Walker Texas Ranger when he rode a horse across the Atlantic, he called it ''Eastern USA'' which was eventually abbreviated as just ''EU''";
+		
+		pasta[10] = new String[1];
+		pasta[10][0] = " ( ͠° ͟ʖ ͡°) OVERCONFIDENCE IS A SLOW AND INSIDIOUS KILLER ( ͠° ͟ʖ ͡°)";
+		
+		pasta[11] = new String[1];
+		pasta[11][0] = " Hey guys. This is my very first copy pasta and I am really nervous about pasting it because if it does not get copy pasta then I will have much embarrassment. I've have thinking about it for a couple of nights now, but here it is!.";
+		
+		pasta[12] = new String[1];
+		pasta[12][0] = " ✓ Obesity ✓ 💥🔫 ✓ Laziness ✓ Stupidity ✓ 🌵 ✓ McDonald's ✓ Donald Trump ✓ $70k College ✓ Bad healthcare ✓ Bad food ✓ Bad music ✓ Fahrenheit ✓ Pounds ✓ Inches ✓ AMERICAN TEST PASSED";
+		
+		pasta[13] = new String[1];
+		pasta[13][0] = " In high school, I was dared to play ''gay chicke'', which is where two straight guys pretend to be gay, and the first one to chicken out loses. The other guy and I are both really stubborn, and neither one of us wanted to lose. We've been married 14 years and we run a bed and breakfast in Vermont with out adopted daughter. If that dude doesn't chicken out soon, I'm going to start to suspect that he's actually gay";
+		
+		pasta[14] = new String[1];
+		pasta[14][0] = "( ͡° ͜ʖ├┬┴┬";
+		
+		pasta[15] = new String[1];
+		pasta[15][0] = "apology for poor english. when were you when john lenin dies? i was sat at home eating smegma butter when pjotr ring. ‘john is kill’ ‘no’";
+		
+    pasta[16] = new String[1];
+    pasta[16][0] = "What is so funny about copypasta? Someone put a lot of time in writing out a wall of text, and all you do is just copy and paste it? Unbelievable. Freaking unbelievable. It is so fucking disrespectful for the original writer to have his thoughts repeated over and over";
+    
+    pasta[17] = new String[1];
+    pasta[17][0] = "Hello Tyler, this is Dhanraj Ameer, the professional headmeat physician, thank you for contacting me last week. My team and I have been looking at x-rays of your skull and we are interested in a procedure that involves taking the head meat from the sides of your head and using it to fill in the dent in the middle. The procedure is popularly known as "Running it down mid". Let me know";
+    
+    pasta[18] = new String[1];
+    pasta[18][0] = " copypasta is dumb (dont copy this message. i know its tempting, and i know you might think it'll be funny, but in reality, it's not)";
+    
+    pasta[19] = new String[1];
+    pasta[19][0] = " Caleb, this is Tom from LA Fitness: we want you to know you are forever banned from our facilities. We understand you take your workout seriously, but what you and your "friends" did in the showers had no cardiovascular value. I know you said you were "working each others glutes", but we both know that's a lie. What you did with the curl bar was disgusting, and our staff is STILL trying to scrub lubricant and bodily fluids off the ceiling. We have added a "Caleb Alarm", don't return.";
+    
+    pasta[20] = new String[1];
+    pasta[20][0] = " I apologize, as my English is rather substandard At what whereabouts were you when the popular browser video game Club Penguin shut down? I was in mine place of residence, when my communications device informed me that someone wanted to contact me. ''Club Penguin, the popular browser MMO has shut down.''''I disagre''";
+    
+    pasta[21] = new String[15];
+    pasta[21][0] = "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ ";
+    pasta[21][1] = "⣿⣿⣿⣿⣿⣿⣿⠛⢩⣴⣶⣶⣶⣌⠙⠫⠛⢋⣭⣤⣤⣤⣤⡙⣿⣿⣿⣿⣿⣿ ";
+    pasta[22][2] = "⣿⣿⣿⣿⣿⡟⢡⣾⣿⠿⣛⣛⣛⣛⣛⡳⠆⢻⣿⣿⣿⠿⠿⠷⡌⠻⣿⣿⣿⣿ ";
+    pasta[23][3] = "⣿⣿⣿⣿⠏⣰⣿⣿⣴⣿⣿⣿⡿⠟⠛⠛⠒⠄⢶⣶⣶⣾⡿⠶⠒⠲⠌⢻⣿⣿ ";
+    pasta[23][4] = "⣿⣿⠏⣡⢨⣝⡻⠿⣿⢛⣩⡵⠞⡫⠭⠭⣭⠭⠤⠈⠭⠒⣒⠩⠭⠭⣍⠒⠈⠛ ";⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢰⣶⣶⣶⣾⣿⣿⣿⣿⣷⡄⠄⢠⣾⣿⣿⣿
+    pasta[24][5] = "⡿⢁⣾⣿⣸⣿⣿⣷⣬⡉⠁⠄⠁⠄⠄⠄⠄⠄⠄⠄⣶⠄⠄⠄⠄⠄⠄⠄⠄⢀ ";
+    pasta[24][6] = "⢡⣾⣿⣿⣿⣿⣿⣿⣿⣧⡀⠄⠄⠄⠄⠄⠄⠄⢀⣠⣿⣦⣤⣀⣀⣀⣀⠄⣤⣾ ";
+    pasta[24][7] = "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⡶⢇⣰⣿⣿⣟⠿⠿⠿⠿⠟⠁⣾⣿⣿ ";
+    pasta[24][8] = "⣿⣿⣿⣿⣿⣿⣿⡟⢛⡛⠿⠿⣿⣧⣶⣶⣿⣿⣿⣿⣿⣷⣼⣿⣿⣿⣧⠸⣿⣿ ";
+    pasta[24][9] = "⠘⢿⣿⣿⣿⣿⣿⡇⢿⡿⠿⠦⣤⣈⣙⡛⠿⠿⠿⣿⣿⣿⣿⠿⠿⠟⠛⡀⢻⣿ ";
+    pasta[24][10] = "⠄⠄⠉⠻⢿⣿⣿⣷⣬⣙⠳⠶⢶⣤⣍⣙⡛⠓⠒⠶⠶⠶⠶⠖⢒⣛⣛⠁⣾⣿ ";
+    pasta[24][11] = "⠄⠄⠄⠄⠄⠈⠛⠛⠿⠿⣿⣷⣤⣤⣈⣉⣛⣛⣛⡛⠛⠛⠿⠿⠿⠟⢋⣼⣿⣿ ";
+    pasta[24][12] = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠉⠉⣻⣿⣿⣿⣿⡿⠿⠛⠃⠄⠙⠛⠿⢿⣿ ";
+    pasta[24][13] = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢬⣭⣭⡶⠖⣢⣦⣀⠄⠄⠄⠄⢀⣤⣾⣿ ";
+    pasta[24][14] = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢰⣶⣶⣶⣾⣿⣿⣿⣿⣷⡄⠄⢠⣾⣿⣿⣿ ";
+    
+		print(pasta, (int)Math.floor(Math.random()*25));
+	}
+}
